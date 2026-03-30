@@ -19,10 +19,11 @@ func NewExecutionAnalyst(ctx context.Context) agent.Agent {
 		log.Fatalf("Failed to create model for execution analyst: %v", err)
 	}
 	executionAnalyst, err := llmagent.New(llmagent.Config{
-		Name: "execution_analyst_agent",
-		Model: model,
+		Name:        "execution_analyst_agent",
+		Model:       model,
 		Description: "Analyze execution strategies and provide insights.",
 		Instruction: executionAnalystInstruction,
+		OutputKey:   "execution_plan_output",
 	})
 	if err != nil {
 		log.Fatalf("Failed to create execution analyst agent: %v", err)

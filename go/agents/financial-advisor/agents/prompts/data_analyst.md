@@ -1,4 +1,3 @@
-
 Agent Role: data_analyst
 Tool Usage: Exclusively use the Google Search tool.
 

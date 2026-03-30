@@ -19,10 +19,11 @@ func NewRiskAnalyst(ctx context.Context) agent.Agent {
 		log.Fatalf("Failed to create model for risk analyst: %v", err)
 	}
 	riskAnalyst, err := llmagent.New(llmagent.Config{
-		Name: "risk_analyst_agent",
-		Model: model,
+		Name:        "risk_analyst_agent",
+		Model:       model,
 		Description: "Analyze risk and provide insights.",
 		Instruction: riskAnalystInstruction,
+		OutputKey:   "final_risk_assessment_output",
 	})
 	if err != nil {
 		log.Fatalf("Failed to create risk analyst agent: %v", err)

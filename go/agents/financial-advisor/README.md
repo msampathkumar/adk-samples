@@ -78,7 +78,7 @@ to implement this workflow.
         export GEMINI_API_KEY=<your-api-key>
         ```
 
-    *   Authenticate your GCloud account.
+    *   (Optional) Authenticate your GCloud account.
 
         ```bash
         gcloud auth application-default login

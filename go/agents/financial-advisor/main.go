@@ -41,6 +41,7 @@ func main() {
 			"analyze a market ticker, develop trading strategies, define " +
 			"execution plans, and evaluate the overall risk.",
 		Instruction: instruction,
+		OutputKey:   "financial_coordinator_output",
 		Tools: []tool.Tool{
 			agenttool.New(dataAnalyst, nil),
 			agenttool.New(tradingAnalyst, nil),

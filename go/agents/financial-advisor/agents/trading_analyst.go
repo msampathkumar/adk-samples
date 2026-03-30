@@ -19,10 +19,11 @@ func NewTradingAnalyst(ctx context.Context) agent.Agent {
 		log.Fatalf("Failed to create model for trading analyst: %v", err)
 	}
 	tradingAnalyst, err := llmagent.New(llmagent.Config{
-		Name: "trading_analyst_agent",
-		Model: model,
+		Name:        "trading_analyst_agent",
+		Model:       model,
 		Description: "Analyze trading strategies and provide insights.",
 		Instruction: tradingAnalystInstruction,
+		OutputKey:   "proposed_trading_strategies_output",
 	})
 	if err != nil {
 		log.Fatalf("Failed to create trading analyst agent: %v", err)

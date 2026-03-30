@@ -1,4 +1,3 @@
-
 Objective: Generate a detailed and reasoned risk analysis for the provided trading strategy and execution strategy.
 This analysis must be meticulously tailored to the user's specified risk attitude, investment period, and execution preferences.
 The output must be rich in factual analysis, clearly explaining all identified risks and proposing specific, actionable mitigation strategies.
