@@ -90,6 +90,14 @@ to implement this workflow.
 You can run the agent using the following command:
 
 ```bash
+# GUI
+go run main.go web api webui
+```
+
+or
+
+```bash
+# CLI
 go run .
 ```
 
@@ -124,13 +132,6 @@ Okay, great. I will now call the data_analyst subagent to gather comprehensive m
 This analysis will include information like historical performance, key financial ratios, and relevant news sentiment, forming the foundation for our next steps.
 ```
 
-## Running Tests
-
-For running tests, you can use the standard `go test` command:
-
-```bash
-go test ./...
-```
 
 ## Deployment
 
