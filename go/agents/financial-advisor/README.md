@@ -132,11 +132,6 @@ Okay, great. I will now call the data_analyst subagent to gather comprehensive m
 This analysis will include information like historical performance, key financial ratios, and relevant news sentiment, forming the foundation for our next steps.
 ```
 
-
-## Deployment
-
-The Financial Advisor can be deployed to Vertex AI Agent Engine. Deployment instructions will be provided once the agent is implemented.
-
 ## Customization
 
 1.  **Enhance Data_Analyst Module Search Capabilities**: Integrate with specialized stock data repositories (APIs, databases) to provide more in-depth market data.
